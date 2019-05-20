@@ -1,0 +1,196 @@
+//Header Section Design
+.header
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.01)
+  ul
+    display: inline
+    li
+      display: inline
+.top_header_bar
+  background: $brown-mix
+  padding: $normal-size 0
+  ul
+    li
+      margin-right: $base-size - .1rem
+    li:last-child
+      margin-right: 0
+      font-size: $base-size
+  a
+    text-transform: capitalize
+    color: white
+    letter-spacing: .2px
+.main_navbar_section
+  padding: $normal-size 0
+.nav
+  ul
+    li
+      font-size: $md-size - .2rem
+      margin: 0 $normal-size - .2rem
+      font-weight: 600
+      text-transform: capitalize
+      line-height: $four-size - .3rem
+      a
+        color: $brown-mix
+
+
+//Banner Section Design
+.hero-banner-post
+  position: relative
+  background: $brown-mix
+  color: white
+  .banner_post_info
+    max-width: 80%
+    margin: .8rem auto
+  .banner_category::after
+    background: white
+  a
+    color: white
+  h2
+    font-size: $three-size + .2rem
+    margin: $base-size 0
+    a
+      font-family: $merri-font
+.avatar
+  height: $three-size + .5rem !important
+  width: $three-size + .5rem !important
+  border-radius: 50%
+.author
+  vertical-align: middle
+  font-size: $base-size + .2rem
+  a
+    text-transform: capitalize
+.banner_category
+  text-transform: uppercase
+  font-weight: 600
+  font-size: $base-size + .2rem
+  letter-spacing: 1px
+  &::after
+    content: ""
+    display: block
+    width: 25px
+    height: 3px
+    opacity: .5
+    margin: $normal-size 0
+.banner-excerpt
+  padding: $base-size - .2rem 0
+  font-size: $md-size
+.index-continue
+  text-transform: uppercase
+  font-weight: 600
+  margin-top: 0
+  font-size: $base-size
+  background: $purple
+  border-radius: 40px
+  padding: .7rem $md-size + .3rem
+  transition: .5s ease
+  &::after
+    content: "\f30b"
+    font-family: "Font Awesome 5 Free"
+    color: white
+    margin-left: $normal-size
+    vertical-align: middle
+    transition: .5s ease
+  &:hover
+    background: white
+    border: 1px solid $purple
+    color: $brown-mix
+    transition: .5s ease
+    &::after
+      color: $brown-mix
+.index_post_time
+  background: white
+  width: max-content
+  padding: $normal-size + .3rem $base-size + .6rem
+  border-radius: 50%
+  text-align: center
+  position: absolute
+  left: 96.25%
+  z-index: 1
+  top:  45%
+  p
+    color: $brown-mix
+    font-weight: 600
+    font-size: $base-size + .1rem
+    text-transform: uppercase
+  p:last-child
+    font-size: $md-size - .2rem
+  .date_specific
+    font-size: $md-size - .2rem
+
+//Second Div
+.second_div
+  margin-top: $normal-size
+  a
+    color: $brown-mix
+  h2
+    a
+      font-family: $merri-font
+  .banner_category:after
+    background: $brown-mix
+  .second_div_left
+    p
+      margin: $base-size 0
+    p.banner-excerpt
+      margin-top: 0
+    img.wp-post-image
+      width: 688px
+      width: 100%
+      height: 478
+      height: 100%
+      object-fit: cover
+    h2
+      font-size: $four-size
+
+  .author
+    font-weight: 600
+h3.index_sections
+  margin: $four-size 0
+  font-size: $four-size - .3rem
+  font-weight: 600
+  font-family: $merri-font
+  color: $brown-mix
+.comments
+  font-size: $base-size + .2rem
+  vertical-align: middle
+
+//Index Latest post_tag
+.main_latest_post
+  border-bottom: 4px solid rgba(77,70,79,0.1)
+  padding-bottom: $md-size
+  h2
+    margin: $normal-size 0
+  a
+    color: $brown-mix
+  .banner_category
+    margin: $normal-size 0
+    &::after
+      background: $brown-mix
+//Footer Section Design
+footer
+
+  color: white
+  font-size: $base-size + .2rem
+  a
+    color: white
+    &:hover
+      color: white
+  .copyright
+    text-align: center
+.footer_logo
+  background: white
+  padding: 2% 0
+  text-align: center
+
+  img
+    max-width: 20%
+.footer_social_section
+  a
+    color: $brown-mix
+    &:hover
+      color: $brown-mix
+  ul,li
+    display: inline
+  i
+    margin: 0 $normal-size
+.footer_top,.copyright
+  background: $brown-mix
+  padding: 2% 0

@@ -1,0 +1,242 @@
+//Tags Design
+.post_tag
+  font-size: $md-size - .2rem
+  .tags
+    font-size: $base-size + .2rem
+    text-transform: uppercase
+    font-weight: 600
+  a
+    cursor: pointer
+    display: inline-block
+    color: $brown-mix
+    background: transparent
+    border: 1px solid $brown-mix
+    text-transform: uppercase
+    padding: $normal-size - .3rem $md-size - .3rem
+    border-radius: $four-size
+    margin-left: $normal-size - .4rem
+    font-weight: 600
+    letter-spacing: .5px
+    &:hover
+      background: $brown-mix
+      color: white
+
+
+//Index_sidebar
+.index_sidebar
+form.search
+  input
+    padding: 8px 12px
+    border: none
+    background: #f7f7f7
+    outline: none
+    &::placeholder
+      letter-spacing: .5px
+  button
+    background: $brown-mix
+    border: none
+    padding: 8px 12px
+    color: white
+    cursor: pointer
+//Date Design
+.index_date
+  a
+    height: 66px
+    width: 66px
+    position: relative
+    color: white
+  a::after
+    background: $brown-mix
+    position: absolute
+    border-radius: 50%
+    height: 100%
+    width: 100%
+    left: 0
+    right: 0
+
+
+//Sidebar Recent Posts
+.sidebar-widget
+
+.widget_recent_entries
+  img
+    border-radius:  50%
+    height: 85px
+    width: 85px
+    object-fit: cover
+  h3
+    font-weight: 600
+    font-size: $base-size + .3rem !important
+    a
+      color: $brown-mix
+  h4.recent_posts_heading
+    font-size: $three-size - .3rem !important
+    font-weight: 600
+    font-family: $merri-font
+    color: $brown-mix
+    margin: $md-size 0
+  ul
+    li
+      margin: $base-size 0
+
+
+//Comment Section
+.single_post_comment
+  background: $comment-color
+.comments
+  margin: $three-size 0
+  padding: .6rem $base-size
+  li
+    p
+      position: relative
+      left: $five-size
+      width: 75%
+  h2
+    font-weight: 500
+    margin-bottom: $normal-size
+.comment-notes
+  margin: $normal-size 0
+.blog_comment_section
+  background: $comment-color
+  padding: 2%
+  .comment-body
+    .fn
+      margin: 0 1px 0 3px
+      position: relative
+      top: - $normal-size
+    .says
+      position: absolute
+    .fn,.says
+      font-style: normal
+      font-size: $base-size
+      text-transform: capitalize
+  h3.comment-reply-title
+    font-weight: 500
+  .comment_author_logged_in
+    margin: $normal-size 0
+    a
+      color: $brown-mix
+.comment_textarea_body
+  font-size: $base-size
+  letter-spacing: .5px
+.comment_textarea_body::placeholder
+  font-size: $base-size
+.comment_submit
+  background: $brown-mix
+  color: white
+  font-size: $base-size
+  &:hover
+    background: transparent
+    border: 1px solid $brown-mix
+.comment-form
+  margin: $normal-size 0
+#cancel-comment-reply-link
+  color: $brown-mix
+.commentmetadata
+  position: relative
+  top: - $md-size
+  left: $five-size
+  .comment-edit-link
+    color: $brown-mix
+  a
+    color: $brown-mix
+  a,p
+    font-size: $base-size
+.reply
+  text-align: right
+  a
+    padding: .5% 5%
+    border-radius: 5px
+    border: 1px solid $brown-mix
+    font-size: $base-size
+    color: $brown-mix
+    &:hover
+      background: $brown-mix
+      color: white
+.comment-form-author,.comment-form-email,.comment-form-url
+  display: inline
+  input
+    border-radius: 5px
+    max-width: 205px
+    border: 1px solid #e5e5e5
+    padding: .5rem $normal-size - .2rem
+.comment-form-author,.comment-form-email
+  margin-right: $md-size
+.comment-form-cookies-consent
+  label
+    margin-left: $three-size
+  #wp-comment-cookies-consent
+    height: $md-size
+    width: $three-size
+    background-color: green
+    cursor: pointer
+    position: absolute
+.fn,.says
+  font-family: $merri-font
+  font-weight: 600
+.fn
+  font-style: normal
+  font-size: 1.4rem
+  text-transform: capitalize
+  margin: 0 1px 0 3px
+  position: relative
+  top: -1rem
+.says
+  font-style: normal
+  font-size: 1.4rem
+  text-transform: capitalize
+  position: relative
+  top: -10px
+textarea::placeholder
+  font-size: $base-size
+
+
+//Pagination Design
+.pagination
+  float: right
+  .page-numbers
+    height: 43px
+    width: 43px
+    border-radius: 50%
+    border: 1px solid $purple
+    margin: 0 5px
+    line-height: 43px
+    text-align: center
+    vertical-align: middle
+    background: $purple
+    color: white
+    font-size: $base-size + .4rem
+  .current
+    background: transparent
+    color: $brown-mix
+  .next,.previous
+    width: auto
+    border-radius: 40px
+    padding: 0 $three-size
+
+//Sub Menu Design
+.menu-item-has-children
+  position: relative
+  ul.sub-menu
+    display: none
+.menu-item-has-children:hover
+  ul.sub-menu
+    box-shadow: 0px 1px 9px 0px rgba(77, 70, 79, 0.22)
+    display: block
+    width: 220px
+    position: absolute
+    z-index: 10
+    background: white
+    left: 0
+    margin-top: -5px
+    a
+      display: block
+    li
+      display: block
+      margin: 0
+      padding-left: $normal-size
+      &:hover
+        background: $brown-mix
+        padding-left: $md-size
+        a
+          color: white

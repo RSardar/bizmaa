@@ -1,0 +1,87 @@
+//Single POst Page Design
+.single_post
+  position: relative
+  font-size: $md-size
+  h2,h3,h4,h5,h5
+    font-family: $merri-font
+    margin: $four-size 0 $three-size
+
+  p
+    font-size: $md-size
+    color: $brown-mix
+    font-weight: 400
+    margin: $base-size + .3rem 0
+    a:hover
+      &::after
+        height: 2px
+        width: 100%
+        background: $brown-mix
+        transition: width 2s
+  p.banner_category
+    a
+      color: white   !important
+  h2
+    font-size: $three-size - .1rem
+  h3
+    font-size: $md-size + .6rem
+    font-weight: 600
+  .single_post_thumbnail
+    img
+      width: 1100px
+      height: 472px
+      object-fit: cover
+
+  .banner_category
+    margin-top: $normal-size
+    &:after
+      background: white
+      margin: $normal-size auto
+
+
+.post_title
+  font-weight: 600
+  font-size: $four-size
+  font-family: $merri-font
+  margin: $base-size 0
+
+.single_post_intro
+  max-width: 850px
+  margin: auto
+.single_post_thumb
+  position: relative
+  .overlay
+    position: absolute
+    width: 100%
+    height: 100%
+    bottom: 0
+    background: rgba(0, 0, 0,0.5)
+  img
+    object-fit: cover
+    width: 100%
+    max-height: 500px
+    position: relative
+.single_post_intro
+  position: absolute
+  top: 130px
+  left: 0
+  right: 0
+  bottom: 0
+.single_post_intro_info
+  font-size:  $base-size + .2rem
+  color: white
+
+  h1,a,p
+    color: white !important
+    a
+      color: white
+.article_content
+  h2,h3,h4,h5,h5,strong,b,a
+    color: $brown-mix
+  a
+    font-weight: 600
+
+
+//Inner Page Posts Title
+.category_page
+  h1
+    font-size: $four-size - .2rem

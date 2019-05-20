@@ -1,0 +1,53 @@
+// GLOBAL MIXINS
+
+=box( $radius, $shadowColour, $grad1, $grad2 )
+  -webkit-border-radius:  $radius!important
+  -moz-border-radius:     $radius!important
+  border-radius:          $radius!important
+
+  -webkit-box-shadow: 0 5px 10px $shadowColour
+  -moz-box-shadow:    0 5px 10px $shadowColour
+  box-shadow:         0 5px 10px $shadowColour
+
+  background: #036
+  background: -webkit-linear-gradient($grad1, $grad2)
+  background: -o-linear-gradient($grad1, $grad2)
+  background: -moz-linear-gradient($grad1, $grad2)
+  background: linear-gradient($grad1, $grad2)
+
+=border-radius($radius)
+  -webkit-border-radius:  $radius!important
+  -moz-border-radius:     $radius!important
+  border-radius:          $radius!important
+
+=custom-p($color,$text-transform,$fonts,$size,$line-height)
+  color: $color
+  text-transform: $text-transform
+  font-family: $fonts
+  font-size: $size
+  line-height: $line-height
+
+=custom-btn($radius,$color,$bg,$padding,$size)
+  -webkit-border-radius:  $radius!important
+  -moz-border-radius:     $radius!important
+  border-radius:          $radius!important
+  color: $color
+  padding: $padding
+  background: $bg
+  background: -webkit-linear-gradient($bg)
+  background: -o-linear-gradient($bg)
+  background: -moz-linear-gradient($bg)
+  background: linear-gradient($bg)
+  font-size: $size
+
+=after($content,$display,$margin,$width,$border,$margin-bottom,$border-bottom)
+  $content: ""
+  $display: block
+  $border: none
+  content: $content
+  display: $display
+  margin: $margin
+  width: $width
+  border: $border
+  margin-bottom : $margin-bottom
+  border-bottom: $border-bottom
